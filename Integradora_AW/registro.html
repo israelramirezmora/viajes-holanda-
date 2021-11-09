@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Registro</title>
+			<link rel="stylesheet" type="text/css" href="css/estilo.css">
+			<title>Registro</title>
+			<link rel="stylesheet" type="text/css" href="css/estilo.css">
+			<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	</head>
+	<body>
+		<nav>
+			<svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 6px; margin-left: 20px;" width="50" height="50" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+			<path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+			<path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+			</svg><img class="logo" src="img/galeria1/banner.png" style="margin-left:510px;"><h1 id="titular" style="float: right;" href="index.html">Agencia de Viajes Holanda</h1>
+			<ul>
+			<li><img class="logo" src="img/galeria1/logo.png" id="logo" href="index.html" /></li>
+			<li><a href="index.html" title="Home">Agencia Holanda</a></li> 
+			<li><a href="conocenos.html" title="Conocenos">Conocenos</a></li>
+			<li><a href="paquetes.html" title="Paquetes">Paquetes</a></li>
+			<li><a href="recomendaciones.html" title="Recomendaciones">Recomendaciones</a></li>
+			<li><a href="registro.html" title="Registro">Registro</a></li>
+			<li><a href="cotizaciones.html" title="Cotizaciones">Cotizaciones</a></li>
+			<li><a href="contacto.html" title="Contacto">Contacto</a></li>
+			</ul>
+		</nav>
+		<section>
+			<article>
+				<div id="cotenedor">
+					<header>
+						<h1>Registrate!<svg xmlns="http://www.w3.org/2000/svg" style="margin-left:10px;" width="50" height="50" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+						<path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+						<path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+						</svg></h1>
+					</header>
+				</div>
+			</article>
+		</section>
+	<!--Cuestionario-->
+	<div style="margin-left: 130px;">
+	<section>
+      <article>
+        <div id="formulario" name="formulario" method="post" action="">
+			<fieldset>
+		<legend>Datos</legend>
+		<label>Nombre:</label>
+			<input type="text" name="nombre" onchange="agregarNombre(this)"></input>
+			<br/>
+		<label>Telefono:</label>
+			<input type="text" name="clave" style="width: 50px;"></input>
+			<input type="text" name="numero" style="width: 100px;"></input>
+			<br/>
+		<label>Correo:</label>
+			<input type="text" name="correo"></input>
+			<br/><br/>
+		<button onclick="agregar();" style="margin-left: 100px;"><svg xmlns="http://www.w3.org/2000/svg" style="margin-left:3px; margin:0 auto;" width="20" height="20" fill="currentColor" class="bi bi-clipboard-plus" viewBox="0 0 16 16">
+		<path fill-rule="evenodd" d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+		<path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+		<path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+		</svg>Guardar y Enviar</button>	
+         </div>
+      </article>
+    </section>
+	</div>
+	<br/>
+		<footer>
+			<h2>Visitanos en: </h2>
+			<cite>Todos los derechos reservados</cite>
+			<br>
+			<cite><a title="Agencia de viajes">www.viajes-holanda.com</a></cite>
+		</footer>
+		<script src="js/script.js"></script>
+	</body>
+</html>

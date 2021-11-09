@@ -1,0 +1,180 @@
+body{background-color: #efe;}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	top: 50px;
+	width: 100%;
+	background-color: #23A6F3;
+	left: 0;
+}
+
+li{
+	float: left;
+	margin-top:2px;
+}
+li a{
+	display: block;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+li:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.active{background-color: rgba(0,0,0,0.3);}
+
+/*estilo galeria 1*/
+
+#contenedor{
+	background-color: #FFF; 
+	width: 960px; 
+	margin: 0 auto; 
+	margin-top: 40px;
+	}
+
+h1{	
+	color: #0000FF; 
+	text-align: center; 
+	margin: 10px; 
+	padding: 5px;
+	}
+	
+h2{color: #FFF;}
+
+article .interno{
+	background-color: #23A6F3; 
+	margin: 10px; 
+	padding:10px; 
+	border: 1px solid #000;
+	}
+
+.contenido{
+	display: flex; 
+	flex-wrap: wrap;
+	}
+
+.titulo{
+	padding: 2px; 
+	margin-left: 2px; 
+	background-color: rgba(0,0,0,0.3); 
+	color: white; 
+	width: 147.005px; 
+	height: 20px; 
+	margin-bottom: 2px;
+	}
+
+p{
+	color: #2E64FE; 
+	font-weight:bold;
+	}
+
+.vertical{
+	padding: 2px; 
+	margin-left: 1px; 
+	background-color: #FFF;  
+	color: #000; 
+	font-size: 14px; 
+	width: 147.005px; 
+	height: 120px; 
+	margin-bottom: 1px; 
+	margin-top:1px;
+	}
+
+a.vinculo{
+	margin-top: 25px; 
+	display: block; 
+	color: #bb8fce;
+	}
+
+footer{
+	text-align: center; 
+	background-color:  #2E64FE; 
+	width: 1200px; 
+	margin: 0 auto;
+	} 
+
+footer cite, a{color: white;}
+
+/*estilo galeria 2*/
+.titular{
+	margin:0 auto; 
+	display:flex; 
+	flex-wrap:wrap;
+	padding: 2px; 
+	margin-left: 0 auto; 
+	color: #2E64FE; 
+	width: 147.005px; 
+	height: 20px; 
+	margin-bottom: 2px;
+	}
+.galeria{
+	background-color:#fff; 
+	display:flex; 
+	flex-wrap:wrap; 
+	width:960px; 
+	margin:0 auto;
+	}
+
+img{
+	width: 125px; 
+	height: 140px; 
+	margin-left:-4px;
+	margin-top:-20px;
+	float:left;
+	}
+ol{
+	list-style-type:none;  
+	background:#23A6F3;  
+	padding:9px; 
+	height:150px; 
+	width:940px;
+	margin-top:90px;
+	}
+
+video{
+	width:270px; 
+	height:220px;
+	margin-left:-3px;
+	margin-top: -60px;
+	float:left;
+	}
+
+.galeria article{
+	display:none;
+	margin:0 auto;
+	margin-top:6px;
+}
+
+.galeria article:target{
+	display: block;
+	margin:0 auto;
+	margin-top:6px;
+}
+
+/*carrusel*/
+
+.imagenes{
+	width:915px;
+	height:420px;
+	margin:0 auto;
+}
+
+.logo{
+	height:50px;
+	margin-top:2px;
+}
+
+#formulario{width: 500px; margin: 0 auto;}
+	label{width: 100px; display: inline-block;}
+	table{width: 400px; margin:0 auto;}
+	table, tr, th, td{border: 1px solid #000; border-collapse: collapse;}
+	table th, td{width: 133px;} 
+
