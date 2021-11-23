@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EJEMPLO JSON</title>
+ <style>
+	#formulario{width: 400px; margin: 0 auto; font-weight: bold;}
+	label{width: 100px; display: inline-block;}
+	table{width: 400px; margin:0 auto; background-color: #FFFC00;}
+	table, tr, th, td{border: 1px solid #000; border-collapse: collapse;}
+	table th, td{width: 133px;} 
+	h1, h4{text-align: center; color: #0000FF;}
+	legend{color: black; font-weight: bold;}
+	button{background-color: ; font-weight: bold;}
+	#resultado1, #resultado2, #resultado3, #resultado4, #resultado5, #resultado6{text-align: center; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <h1>Ejercicio con arreglo de objetos</h1>
+  <hr />
+  <div id="formulario">
+	<fieldset>
+		<legend>DATOS PERSONALES</legend>
+		<label>Nombres:</label>
+			<input type="text" name="nombre" onchange="agregarNombre(this)"></input>
+			<br/>
+		<label>Edades:</label>
+			<input type="text" name="edad" onchange="agregarEdad(this)"></input>
+			<br/>
+		<label>Emails:</label>
+			<input type="text" name="email" onchange="agregarEmail(this)"></input>
+			<br/><br/>
+		<button onclick="agregar();">Agregar</button>
+		<button onclick="mostrar();">Motrar</button>
+	</fieldset>
+  </div>
+  <hr/>
+  <h4>SUS DATOS PERSONALES</h4>
+  <div id="resultado1">Nombre: </div>
+  <div id="resultado2">Edad: </div>
+  <div id="resultado3">Email: </div>
+  <hr/>
+  <h4>RESULTADOS</h4>
+  <table>
+	<tr>
+		<th>Nombre</th>
+		<th>Edad</th>
+		<th>Email</th>
+	</tr>
+  </table>
+  <table id="resultado4"></table>
+  <script>
+	var nombre = null;
+	var edad = null;
+	var email = null;
+	var arreglo = new Array();
+	var j = 0;
+	
+	function agregarNombre(parametro){
+		nombre = parametro.value;
+		var mostrarNombre = document.getElementById("resultado1");
+		mostrarNombre.innerHTML = "Nombre: " +nombre;
+	}
+	
+	function agregarEdad(parametro){
+		edad = parametro.value;
+		var mostrarEdad = document.getElementById("resultado2");
+		mostrarEdad.innerHTML = "Edad: " +edad;
+	}
+	
+	function agregarEmail(parametro){
+		email = parametro.value;
+		var mostrarEmail = document.getElementById("resultado3");
+		mostrarEmail.innerHTML = "Email: " +email;
+	}
+	
+	function agregar(){
+		var objeto = {
+			"nombre": nombre,
+			"edad": edad,
+			"email": email,
+		};
+		arreglo[j] = objeto;
+		j++;
+		limpiar();
+		alert("Registro guardado");
+	}
+	
+	function mostrar(){
+		var msj = "";
+		for(var i = 0; i < arreglo.length; i++){
+			msj += "<tr>"+
+				"<td>" +arreglo[i].nombre +"</td>" +
+				"<td>" +arreglo[i].edad +"</td>" +
+				"<td>" +arreglo[i].email +"</td>"+
+					"</tr>";
+		}
+		document.getElementById("resultado4").innerHTML = msj;
+	}
+	
+	function limpiar(){
+		document.getElementById("resultado1").innerHTML = "Nombre: ";
+		document.getElementById("resultado2").innerHTML = "Edad: ";
+		document.getElementById("resultado3").innerHTML = "Email: ";
+	}
+	
+  </script>
+</body>
+</html>
